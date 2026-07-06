@@ -17,6 +17,17 @@
       text-align: center;
     }
 
+    .intro {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 18px 0 30px 0;
+      font-size: 15px;
+    }
+
     .project {
       background: white;
       padding: 20px;
@@ -37,12 +48,19 @@
       font-weight: bold;
     }
 
+    .contact a {
+      display: inline;
+      margin: 0 6px;
+    }
+
     .tag {
       background: #eee;
       padding: 4px 8px;
       border-radius: 6px;
       font-size: 13px;
       margin-right: 5px;
+      display: inline-block;
+      margin-bottom: 6px;
     }
   </style>
 </head>
@@ -50,13 +68,25 @@
 <body>
   <h1>Mayukh Das — LLM Projects</h1>
 
-  <i>
-    I am doing PhD in LLM. I build projects around LLM, RAG, Knowledge Graphs, Agents, Bias, Evaluation, Semantics and Reasoning. All source codes are shared in my github profile: <a href="https://github.com/Mayukhga83">Mayukh's Git Hub</a>  
-    Contact: <a href="mailto:mayukh@ifis.cs.tu-bs.de">mayukh's email</a>
-  </i>
-  <i>
-    <p><a href="mailto:mayukh@ifis.cs.tu-bs.de">mayukh's email</a></p>
-  </i>
+  <div class="intro">
+    <i>
+      I am doing PhD in LLM. I build projects around LLM, RAG, Knowledge Graphs, Agents, Bias, Evaluation, Semantics and Reasoning. 
+      All source codes are shared in my GitHub profile:
+      <a href="https://github.com/Mayukhga83" target="_blank">Mayukh's GitHub</a>
+    </i>
+  </div>
+
+  <div class="contact">
+    <p>
+      <strong>Contact:</strong>
+      <a href="mailto:mayukh@ifis.cs.tu-bs.de">mayukh@ifis.cs.tu-bs.de</a>
+      |
+      <a href="https://github.com/Mayukhga83" target="_blank">GitHub</a>
+      |
+      <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID/" target="_blank">LinkedIn</a>
+    </p>
+  </div>
+
   <div class="project">
     <h2>PaperMind</h2>
     <p>
@@ -75,10 +105,9 @@
       <span class="tag">BGE Reranking</span>
       <span class="tag">Structured Outputs</span>
       <span class="tag">Citation Auditing</span>
-<span class="tag">PyMuPDF</span>
+      <span class="tag">PyMuPDF</span>
     </p>
     <a href="https://huggingface.co/spaces/Kurapika993/papermind" target="_blank">Live Demo</a>
-
   </div>
 
   <div class="project">
@@ -87,7 +116,6 @@
       Convert evolving LLM conversations into structured long-term memory using knowledge graphs and semantic retrieval. Inspect how specialized agents retrieve context, resolve entities, detect conflicts, and update memory through automatic, review, or observe-only policies.
     </p>
     <p>
-      
       <span class="tag">OpenAI</span>
       <span class="tag">Knowledge Graphs</span>
       <span class="tag">Hybrid Retrieval</span>
@@ -102,12 +130,9 @@
       <span class="tag">Streamlit</span>
       <span class="tag">Plotly</span>
       <span class="tag">NetworkX</span>
-
     </p>
     <a href="https://graphmind-7xpmdsdymmpf2mlsihwfys.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
-
 
   <div class="project">
     <h2>BiasGraph</h2>
@@ -131,7 +156,6 @@
       <span class="tag">Pandas</span>
     </p>
     <a href="https://biasgraph-agentic-bias-reasoning-workbench-oquoxoyrrxmn8lj6ugt.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
   
   <div class="project">
@@ -154,13 +178,12 @@
       <span class="tag">Streamlit</span>
     </p>
     <a href="https://inferopt-9vybhtkqbnubo5px3layk7.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
 
   <div class="project">
-    <h2>Agentic LLM Benchmarking WorkBench</h2>
+    <h2>Agentic LLM Benchmarking Workbench</h2>
     <p>
-      Benchmark and compare multiple LLMs using specialist evaluator agents for faithfulness, bias, toxicity, and reasoning quality. Track model performance and OpenTelemetry Traces.
+      Benchmark and compare multiple LLMs using specialist evaluator agents for faithfulness, bias, toxicity, and reasoning quality. Track model performance and OpenTelemetry traces.
     </p>
     <p>
       <span class="tag">OpenAI API</span>
@@ -170,13 +193,13 @@
       <span class="tag">Streamlit</span>
     </p>
     <a href="https://agentic-llm-benchmarking-workbench-enapptufdbgvvl6meuh9pw3.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
 
   <div class="project">
     <h2>AnalogyForge</h2>
     <p>
-      AnalogyForge helps researchers test whether a cross-domain analogy really holds up. It uses LLMs to map the source and target mechanisms, highlights strong and weak correspondences, shows where the analogy breaks, and turns the most defensible transfer into a testable hypothesis. The work is a follow up project inspired from our paper <a href="https://aclanthology.org/2025.inlg-main.28" target="_blank">link</a>published in INLG 2025.
+      AnalogyForge helps researchers test whether a cross-domain analogy really holds up. It uses LLMs to map the source and target mechanisms, highlights strong and weak correspondences, shows where the analogy breaks, and turns the most defensible transfer into a testable hypothesis. The work is a follow-up project inspired by our paper
+      <a href="https://aclanthology.org/2025.inlg-main.28" target="_blank">published in INLG 2025</a>.
     </p>
     <p>  
       <span class="tag">LLM Orchestration</span>
@@ -188,11 +211,8 @@
       <span class="tag">PyVis</span>
       <span class="tag">Plotly</span>
       <span class="tag">Streamlit</span>
-
-
     </p>
     <a href="https://amsztmnz9nbqcp62cnydzc.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
 
   <div class="project">
@@ -209,13 +229,14 @@
       <span class="tag">Pydantic</span>
     </p>
     <a href="https://narrativedna-wlhbyrblvgz9au6w7ocfqc.streamlit.app/" target="_blank">Live Demo</a>
-
   </div>
 
   <div class="project">
-    <h2>Toximatic: Contextual toxic data generation with Agents</h2>
+    <h2>Toximatic: Contextual Toxic Data Generation with Agents</h2>
     <p>
-      Generate context-dependent utterance-context pairs with controlled polarity using OpenAI models. This is a demo of the pipeline described in our paper <a href="https://aclanthology.org/2024.sigdial-1.65" target="_blank">link</a>published in SIGDIAL 2024.
+      Generate context-dependent utterance-context pairs with controlled polarity using OpenAI models. This is a demo of the pipeline described in our paper
+      <a href="https://aclanthology.org/2024.sigdial-1.65" target="_blank">published in SIGDIAL 2024</a>.
+    </p>
     <p>
       <span class="tag">Controlled Generation</span>
       <span class="tag">Streamlit</span>
